@@ -1,0 +1,39 @@
+forEach for doing a thing with or to every entry in an array;
+
+filter for producing a new array containing only qualifying entries;
+
+map for making a one-to-one new array by transforming an existing array;
+
+some to check whether at least one element in an array fits some description;
+
+every to check whether all entries in an array match a description;
+
+find to look for a value in an array
+
+// Prints "a, undefined, c"
+for (let i = 0; i < arr.length; ++i) {
+  console.log(arr[i]);
+}
+
+// Prints "a, c"
+arr.forEach(v => console.log(v));
+
+// Prints "a, c"
+for (let i in arr) {
+  console.log(arr[i]);
+}
+
+// Prints "a, undefined, c"
+for (const v of arr) {
+  console.log(v);
+}
+
+
+Conclusions
+Generally, for/of is the most robust way to iterate over an array in JavaScript. It is more concise than a conventional for loop and doesn't have as many edge cases as for/in and forEach(). The major downsides of for/of is that you need to do extra work to access the index (1), and you can't chain like you can with forEach(). forEach() comes with several caveats and should be used sparingly, but there are numerous cases where it makes code more concise.
+
+(1) To access the current array index in a for/of loop, you can use the Array#entries() function.
+
+for (const [i, v] of arr.entries()) {
+  console.log(i, v); // Prints "0 a", "1 b", "2 c"
+}

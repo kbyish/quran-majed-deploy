@@ -25,7 +25,6 @@
         //method 1 using set super 1000 time fast comparing to other methods it  take 4 while other take ~= 2,000
    // let t1 = performance.now();
     // const quranWordArr1 = [...new Set(resultArr)];
-   //  console.log(`generateQuranWordsArray Method #1 Set(): time  =${performance.now() - t1} `);
    // return quranWordArr1; // End of the function
 
         // method 2 using  reduce
@@ -33,12 +32,10 @@
         const quranWordArr2 = quranWordArr.reduce((unique, item) => {
           return unique.includes(item) ? unique : [...unique, item];
         });
-        console.log(`generateQuranWordsArray: Method #2 Reduce: time  =${performance.now() - t1} `);
     
         // method 3 using  filter   
         t1 = performance.now();
         const quranWordArr3 = quranWordArr.filter((item, index) => quranWordArr.indexOf(item) != index)
-        console.log(`generateQuranWordsArray: Method #3 filter: time  =${performance.now() - t1} `);
     
         //method 4 using find 
         t1 = performance.now();
@@ -48,11 +45,4 @@
             quranWordArr4.push(item);
           }
         }
-        console.log(`generateQuranWordsArray:Method #4 loop & find: time  =${performance.now() - t1} `);
-    
-        console.log('generateQuranWordsArray:quranWordArr.length =', quranWordArr.length);
-        console.log('generateQuranWordsArray:quranWordArr1.length =', quranWordArr1.length);
-        console.log('generateQuranWordsArray:quranWordArr2.length =', quranWordArr2.length);
-        console.log('generateQuranWordsArray:quranWordArr3.length =', quranWordArr3.length);
-        console.log('generateQuranWordsArray:quranWordArr4.length =', quranWordArr4.length);        
     */

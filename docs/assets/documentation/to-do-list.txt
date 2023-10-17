@@ -1,6 +1,11 @@
 01- autocomplete 
-  1- add an arrow icon when click on it the full dropdown will be appear
-  2- add icon reloading with bolean input to wait for  the list of textList array to cpomplete loading
+  1-Keyboard shortcut:
+    any character : alwas filter and highlight first item in the filtered list
+    'Enter': Select the current one 
+    'arrow up / down' highlight the dropdownlist and move up and down  
+
+  2-add an arrow icon when click on it the full dropdown will be appear
+  3- add icon reloading with bolean input to wait for  the list of textList array to cpomplete loading
 
 02- Add JEST unit test 
 

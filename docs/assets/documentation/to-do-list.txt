@@ -1,3 +1,20 @@
+01- autocomplete 
+  1- add an arrow icon when click on it the full dropdown will be appear
+  2- add icon reloading with bolean input to wait for  the list of textList array to cpomplete loading
+
+02- Add JEST unit test 
+
+03- Update the Binry serach algorithim as a common helper
+    recursiveFunction in aya-search-result.component 
+
+04-Spinner 
+    get 2 spinner in same component one is local small spinner 
+    and other is bigeer entire component spinner 
+
+05- 
+
+
+
 00-  create ur own virtual scroller 
 01- remove displaying result when typeahead input has no text 
 
